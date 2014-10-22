@@ -1,13 +1,14 @@
 {
   "name": "docker-resource-viewer",
   "version": "1.0.0",
-  "description": "",
+  "description": "Monitor your docker containers resource usage.",
   "main": "index.js",
   "dependencies": {
     "async": "^0.9.0",
+    "blessed": "0.0.37",
     "express": "^4.9.7",
     "request": "^2.40.0",
-    "socket.io": "^1.1.0"
+    "socket.io": "^1.1.0",
   },
   "devDependencies": {},
   "scripts": {
