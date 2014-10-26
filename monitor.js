@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var blessed = require("blessed");
 var async = require("async");
 
@@ -52,7 +54,7 @@ function getContainersAndResources(cb) {
 		if (!err) {
 			containers = containers.sort(function(a, b) {
 				return a.Id.localeCompare(b.Id);
-			})
+			});
 			async.map(containers, function(container, callback) {
 				var id = container.Id;
 				async.parallel({
